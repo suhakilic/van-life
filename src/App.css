@@ -1,0 +1,49 @@
+header>nav {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  background-color: #FF8C38;
+  padding: 1rem;
+  padding-right: 4rem
+}
+
+/* WARNING: small screen navbar adjust */
+
+header>nav>a {
+  color: #4D4D4D;
+  font-size: 1.25rem;
+}
+
+header>nav>a:hover {
+  color: bisque;
+}
+
+.home-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/home-hero.png") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  color: white;
+  padding: 45px 25px;
+  font-size: 1.4rem;
+}
+
+.home-container>p {
+  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-container>a {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  color:#4D4D4D;;
+  min-width: 250px;
+  background-color: #FF8C38;
+  text-align: center;
+  text-decoration: none;
+}
