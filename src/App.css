@@ -1,32 +1,42 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 header>nav {
-  height: 10vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
+  height: 50px;
   background-color: #FF8C38;
   padding: 1rem;
-  padding-right: 4rem
 }
 
 /* WARNING: small screen navbar adjust */
 
-header>nav>a {
+header>nav>a, .home-icon {
   color: #4D4D4D;
   font-size: 1.25rem;
 }
 
-header>nav>a:hover {
+.home-icon{
+  font-size: 2rem;
+}
+
+header>nav>a:hover, .home-icon:hover {
   color: bisque;
 }
 
 .home-container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/home-hero.png") no-repeat center center;
   background-size: cover;
-  height: 90vh;
+  height: calc(100vh - 100px);
   color: white;
   padding: 45px 25px;
   font-size: 1.4rem;
+  
 }
 
 .home-container>p {
@@ -108,4 +118,36 @@ header>nav>a:hover {
 .van-type.luxury:hover,
 .van-type.luxury.selected {
   background-color: #161616;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.host-nav {
+  display: flex;
+}
+
+.host-nav a {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+
+.host-nav a:hover {
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer{
+  background-color: #FF8C38;
+  color: #4D4D4D;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function Vans() {
   const [vans, setVans] = React.useState([]);
@@ -10,12 +11,14 @@ export default function Vans() {
 
   const myVans = vans.map((el) => {
     return (
-      <div key={el.id} className="van">
-        <img src={el.imageUrl} />
-        <h4>{el.name}</h4>
-        <p>{`${el.price} $/day`}</p>
-        <span className={`van-type ${el.type} selected`}>{el.type}</span>
-      </div>
+      <Link to={`/vans/:${el.id}`}>
+        <div key={el.id} className="van">
+          <img src={el.imageUrl} alt={`Image of van: ${el.name}`} />
+          <h4>{el.name}</h4>
+          <p>{`${el.price} $/day`}</p>
+          <span className={`van-type ${el.type} selected`}>{el.type}</span>
+        </div>
+      </Link>
     );
   });
   return (
