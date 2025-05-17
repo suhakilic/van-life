@@ -337,9 +337,7 @@ a {
 }
 
 .van-type.clear-filters {
-  margin-left: -20px;
   height: 34px;
-  padding: 6px 26px;
   font-style: normal;
   font-weight: 500;
   border: none;
@@ -352,7 +350,6 @@ a {
 .van-list-filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
 }
 
 .van-list-filter-buttons > a {
