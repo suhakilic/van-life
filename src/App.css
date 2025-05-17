@@ -349,3 +349,12 @@ a {
   background-color: transparent;
   color: #4D4D4D;
 }
+
+.van-list-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.van-list-filter-buttons > a {
+    margin-right: 15px;
+}
