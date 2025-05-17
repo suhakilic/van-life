@@ -17,9 +17,6 @@ import HostVanPricing from "./pages/Host/HostVanPricing";
 import HostVanPhotos from "./pages/Host/HostVanPhotos";
 import HostVanInfo from "./pages/Host/HostVanInfo";
 
-
-
-
 function App() {
   return (
     <BrowserRouter>
