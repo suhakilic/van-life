@@ -352,6 +352,7 @@ a {
 .van-list-filter-buttons {
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem;
 }
 
 .van-list-filter-buttons > a {
